@@ -54,7 +54,7 @@ def get_gbif_key_backbone(name):
     status = ["NA"]
     match_type = ["NONE"]
 
-    data = species_api.name_backbone(name=name, strict=True, rank="SPECIES")
+    data = species_api.name_backbone(name=name, strict=True, rank="species")
 
     # if rank not a key in data
     if "rank" not in data:
